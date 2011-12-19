@@ -1,0 +1,30 @@
+#logo{
+    margin-left:25px;
+    margin-top:20px;
+}
+
+.taxons-list li.current a {
+  width: 180px;
+  background: url(images/menu-current.png) right center no-repeat;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#footer {
+
+    width: 985px;
+    width-min: 985px;
+    margin-left: 13%;
+    text-align: center;
+}
+
+#nav-bar ul {
+
+    padding-right: 25px;
+}
+
+#header {
+
+    padding-right: 25px;
+
+}
