@@ -1,5 +1,5 @@
 $:.unshift(File.expand_path('./lib', ENV['rvm_path']))
-require "rvm/capistrano"
+#require "rvm/capistrano"
 require "bundler/capistrano"
 
 set :application, "TFH_Store"
@@ -7,7 +7,7 @@ set :user, 'spree'
 set :group, 'www-data'
 set :domain, "tfh.spreeworks.com"
 
-set :rvm_ruby_string, 'ree-1.8.7-2011.03'
+set :rvm_ruby_string, 'ruby-1.8.7-p174'
 
 set :scm, :git
 
