@@ -1,22 +1,64 @@
-set :application, "TFH Webstore"
+$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
+require "rvm/capistrano"
+require "bundler/capistrano"
+
+set :application, "TFH_Store"
+set :user, 'spree'
+set :group, 'www-data'
+set :domain, "tfh.spreeworks.com"
+
+set :rvm_ruby_string, 'ree-1.8.7-2011.03'
+
+set :scm, :git
+
+role :web, domain
+role :app, domain
+role :db,  domain, :primary => true
+
 set :repository,  "git@github.com:vancetyler/TFH_Spree.git"
-set :scm, "git"
-set :user, "spree"
-set :scm_passphrase, "tRMCMvl6uvop"
-set :branch, "master"
-set :deploy_via, :checkout
-set :git_shallow_clone, 1
-set :use_sudo, false
-set :deploy_to, "/home//apps/store"
-# If you aren't deploying to /u/apps/#{application} on the target
-# servers (which is the default), you can specify the actual location
-# via the :deploy_to variable:
-# set :deploy_to, "/var/www/#{application}"
+set :branch,      "master"
+set :deploy_to,   "/data/#{application}"
+set :deploy_via,  :remote_cache
+set :use_sudo,    false
 
-# If you aren't using Subversion to manage your source code, specify
-# your SCM below:
-# set :scm, :subversion
+default_run_options[:pty] = true
+set :ssh_options, { :forward_agent => true }
 
-role :app, "http://tfh.spreeworks.com/"
-role :web, "http://tfh.spreeworks.com/"
-role :db,  "http://tfh.spreeworks.com/", :primary => true
+namespace :foreman do
+  desc "Export the Procfile to Ubuntu's upstart scripts"
+  task :export, :roles => :app do
+    run "cd #{current_path} && bundle exec foreman export upstart /etc/init -a #{application}  -u spree"
+  end
+
+  desc "Start the application services"
+  task :start, :roles => :app do
+    sudo "start #{application}"
+  end
+
+  desc "Stop the application services"
+  task :stop, :roles => :app do
+    sudo "stop #{application}"
+  end
+
+  desc "Restart the application services"
+  task :restart, :roles => :app do
+    sudo "restart #{application}"
+  end
+end
+
+namespace :deploy do
+  desc "Symlink shared configs and folders on each release."
+  task :symlink_shared do
+    run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+    run "ln -nfs #{shared_path}/config/Procfile #{release_path}/Procfile"
+  end
+end
+
+before 'deploy:start', 'foreman:export'
+after 'deploy:start', 'foreman:start'
+
+before 'deploy:restart', 'foreman:export'
+after 'deploy:restart', 'foreman:restart'
+
+load 'deploy/assets'
+before 'deploy:assets:precompile', 'deploy:symlink_shared'

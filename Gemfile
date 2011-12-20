@@ -17,6 +17,18 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :production do
+  gem 'unicorn'
+  gem 'mysql2'
+  gem 'foreman'
+  gem 'therubyracer'
+end
+
+group :development do
+  gem 'capistrano'
+end
+
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
