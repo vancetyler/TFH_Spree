@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8cfb776-6a08-4208-aace-b6a42dac5095" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/spree4.iml" afterPath="$PROJECT_DIR$/.idea/spree4.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/deploy.rb" afterPath="$PROJECT_DIR$/config/deploy.rb" />
     </list>
@@ -28,19 +27,19 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" showNonProject="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="deploy.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="40" selection-start="260" selection-end="260" vertical-scroll-proportion="0.34615386">
+            <state line="63" column="1" selection-start="1656" selection-end="1656" vertical-scroll-proportion="-42.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="61" selection-start="373" selection-end="373" vertical-scroll-proportion="-5.3333335">
+            <state line="18" column="61" selection-start="373" selection-end="373" vertical-scroll-proportion="0.30769232">
               <folding />
             </state>
           </provider>
@@ -442,16 +441,16 @@
         <state line="4" column="150" selection-start="347" selection-end="347" vertical-scroll-proportion="0.15157895" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="61" selection-start="373" selection-end="373" vertical-scroll-proportion="-5.3333335">
+        <state line="63" column="1" selection-start="1656" selection-end="1656" vertical-scroll-proportion="-42.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="40" selection-start="260" selection-end="260" vertical-scroll-proportion="0.34615386">
+        <state line="18" column="61" selection-start="373" selection-end="373" vertical-scroll-proportion="0.30769232">
           <folding />
         </state>
       </provider>
