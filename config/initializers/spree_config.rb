@@ -1,1 +1,3 @@
-#Spree::Config.set(:logo => "store/logo.png")
+if Spree::Config.instance
+  Spree::Config.set(:logo => "store/logo.png")
+end
