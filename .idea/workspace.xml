@@ -42,19 +42,19 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" showNonProject="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="deploy.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="47" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
+            <state line="63" column="0" selection-start="1653" selection-end="1653" vertical-scroll-proportion="0.85619175">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="500.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="500.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/500.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="19" selection-start="637" selection-end="637" vertical-scroll-proportion="0.54470426">
+            <state line="22" column="19" selection-start="637" selection-end="637" vertical-scroll-proportion="-16.5">
               <folding />
             </state>
           </provider>
@@ -109,8 +109,8 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/store/all.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/store/layout.css.scss" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/config/deploy.rb" />
         <option value="$PROJECT_DIR$/public/500.html" />
+        <option value="$PROJECT_DIR$/config/deploy.rb" />
       </list>
     </option>
   </component>
@@ -491,16 +491,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
+    <entry file="file://$PROJECT_DIR$/public/500.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="47" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
+        <state line="22" column="19" selection-start="637" selection-end="637" vertical-scroll-proportion="-16.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/500.html">
+    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="19" selection-start="637" selection-end="637" vertical-scroll-proportion="0.54470426">
+        <state line="63" column="0" selection-start="1653" selection-end="1653" vertical-scroll-proportion="0.85619175">
           <folding />
         </state>
       </provider>
