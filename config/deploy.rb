@@ -2,7 +2,7 @@ $:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 require "rvm/capistrano"
 require "bundler/capistrano"
 
-set :application, "store"
+set :application, "tfh_webstore"
 set :user, 'spree'
 set :group, 'www-data'
 set :domain, "tfh.spreeworks.com"
