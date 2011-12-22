@@ -13,7 +13,7 @@ set :scm, :git
 
 role :web, domain
 role :app, domain
-#role :db,  domain, :primary => true
+role :db,  domain, :primary => true
 
 set :repository,  "git://github.com/vancetyler/TFH_Spree.git"
 set :branch,      "master"
