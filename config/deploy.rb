@@ -11,9 +11,9 @@ set :rvm_ruby_string, 'ree-1.8.7-2011.03'
 
 set :scm, :git
 
-role :web, domain
-role :app, domain
-#role :db,  domain, :primary => true
+role :web, '50.57.154.26'
+role :app, '50.57.154.26'
+role :db,  '50.57.154.26', :primary => true
 
 set :repository,  "git://github.com/vancetyler/TFH_Spree.git"
 set :branch,      "master"
