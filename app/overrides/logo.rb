@@ -1,5 +1,5 @@
 Deface::Override.new(:virtual_path => "layouts/spree_application",
-                     :name => "footer",
-                     :replace => "#footer-left",
-                     :text => "<h4>Questions?</h4><p>Please Contact the Webstore <%= mail_to 'sean@tfh.org?subject=Webstore Inquiry', 'Admin' %></p>",
+                     :name => "logo",
+                     :replace => "#logo",
+                     :text => "<div id='logo'><a href='/'></a></div>",
                      :disabled => false)
