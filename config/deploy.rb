@@ -60,5 +60,5 @@ after 'deploy:start', 'foreman:start'
 before 'deploy:restart', 'foreman:export'
 after 'deploy:restart', 'foreman:restart'
 
-#load 'deploy/assets'
-#before 'deploy:assets:precompile', 'deploy:symlink_shared'
+load 'deploy/assets'
+before 'deploy:assets:precompile', 'deploy:symlink_shared'
