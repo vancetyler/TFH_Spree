@@ -13,7 +13,7 @@ set :scm, :git
 
 role :web, domain
 role :app, domain
-#role :db,  domain, :primary => true
+role :db,  domain, :primary => true
 
 set :repository,  "git://github.com/vancetyler/TFH_Spree.git"
 set :branch,      "master"
@@ -60,5 +60,5 @@ after 'deploy:start', 'foreman:start'
 before 'deploy:restart', 'foreman:export'
 after 'deploy:restart', 'foreman:restart'
 
-load 'deploy/assets'
-before 'deploy:assets:precompile', 'deploy:symlink_shared'
+#load 'deploy/assets'
+#before 'deploy:assets:precompile', 'deploy:symlink_shared'
