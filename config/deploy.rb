@@ -13,7 +13,7 @@ set :scm, :git
 
 role :web, '50.57.154.26'
 role :app, '50.57.154.26'
-role :db,  '50.57.154.26', :primary => true
+#role :db,  '50.57.154.26', :primary => true
 
 set :repository,  "git://github.com/vancetyler/TFH_Spree.git"
 set :branch,      "master"
